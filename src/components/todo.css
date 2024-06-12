@@ -1,0 +1,37 @@
+.disFlex{
+    display: flex;
+    justify-content: space-around;
+}
+.btnAdd{
+    padding: 7px;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 25px;
+    border-color: blue;
+}
+.selectTodo{
+    padding: 7px;
+    background-color: rgb(159, 163, 164);
+    font-size: 17px;
+    border-radius: 10px;
+
+}
+.custom-modal {
+    max-width: 500px;
+    margin: auto;
+  }
+  .task-container{
+    background-color:#cbcbe1;
+    border-radius: 12px;
+    padding: 15px;
+    width: 50%;
+    display: flex;
+    margin-left: 25%;
+    flex-direction: column-reverse;
+  }
+  .task-info-container {
+    display: flex;
+    align-items: center;
+}
