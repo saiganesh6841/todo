@@ -1,8 +1,6 @@
-import { type } from "@testing-library/user-event/dist/type";
-import { ReduxStore } from "./store";
 
 
-const dispath=ReduxStore.dispatch
+
 
 
 let nextTaskId = 0;

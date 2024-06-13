@@ -55,7 +55,7 @@ const TodoApp = () => {
     if (index !== -1) {
         const taskToEdit = tasks[index];
         setTitle(taskToEdit.title || '');
-        setStatus(taskToEdit.status || ''); // Set the status when editing a task
+        setStatus(taskToEdit.status || '');
         setEditingTask(index);
         handleShow();
     } else {
@@ -64,7 +64,7 @@ const TodoApp = () => {
     };
     
     const handleUpdateTask = () => {
-        dispatch(updateTask(editingTask, { title, status })); // Update the task with the editingTaskIndex
+        dispatch(updateTask(editingTask, { title, status })); 
         handleClose();
     };
 
