@@ -9,7 +9,6 @@
     font-weight: bold;
     border-radius: 10px;
     font-size: 25px;
-    border-color: blue;
 }
 .selectTodo{
     padding: 7px;
@@ -23,15 +22,19 @@
     margin: auto;
   }
   .task-container{
-    background-color:#cbcbe1;
+    background-color:#c8c8e6;
     border-radius: 12px;
     padding: 15px;
     width: 50%;
     display: flex;
     margin-left: 25%;
     flex-direction: column-reverse;
+    /* background-color:#c0c0c3; */
   }
   .task-info-container {
     display: flex;
     align-items: center;
+    padding: 0px;
 }
+
+

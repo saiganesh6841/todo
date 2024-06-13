@@ -111,27 +111,27 @@ const TodoApp = () => {
                         filteredTasks.map((task, index) => (
                         <Card key={index} className="mb-2" >
                             <Card.Body className="d-flex justify-content-between align-items-center">
-                                <div className="task-info-container">
+                                <div className="task-info-container" style={{opacity:1,transform:"none"}}>
                                     <Form.Check
                                         type="checkbox"
                                         checked={task.status === 'Complete'}
                                         onChange={() => handleToggleStatus(task.id)}
                                         className="me-2"
-                                        style={{fontSize:"24px"}}
+                                        style={{fontSize:"20px"}}
                                     />
                                    <div>
-                                            <div style={{ textDecoration: task.status === 'Complete' ? 'line-through' : 'none', fontSize: "20px" }}>
+                                            <div style={{ textDecoration: task.status === 'Complete' ? 'line-through' : 'none', fontSize: "17px" }}>
                                                 {task.title}
                                             </div>
-                                            <div className="text-muted" style={{ fontSize: '0.8em' }}>{task.time}</div>
+                                            <div className="text-muted" style={{ fontSize: '0.8em',textAlign:"left" }}>{task.time}</div>
                                         </div>
                                 </div>
                                 <div>
-                                    <Button variant="outline-light" size="sm" className="me-2" onClick={() => handleDeleteTask(task.id)}>
-                                        <img src="https://img.icons8.com/?size=24&id=99971&format=png" />
+                                    <Button variant="outline-secondary" size="sm" className="me-2" onClick={() => handleDeleteTask(task.id)}>
+                                        <img src="https://img.icons8.com/?size=24&id=99971&format=png" style={{width:"17px",height:"17px"}} />
                                     </Button>
-                                    <Button variant="outline-light" size="sm"  onClick={() => handleEdit(task.id)}>
-                                        <img src="https://img.icons8.com/?size=30&id=71201&format=png" />
+                                    <Button variant="outline-secondary" size="sm"  onClick={() => handleEdit(task.id)}>
+                                        <img src="https://img.icons8.com/?size=30&id=71201&format=png" style={{width:"17px",height:"17px"}} />
                                     </Button>
                                 </div>
                             </Card.Body>
